@@ -20,6 +20,7 @@ def get_matches(tiers, penalties):
     all_matches.to_csv("matches.txt")
     # print(all_matches)
     matches = select_matches(tiers, all_matches, penalties)
+    print(matches)
     return matches
 
 def safe_drop(frame, index):
